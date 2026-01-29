@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDVP Portfolio | Mark Gian Jacob</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts - Cyberpunk Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Cyberpunk Grid Background -->
+    <div class="cyber-grid"></div>
+    
+    <!-- Animated Scan Lines -->
+    <div class="scanlines"></div>
+    
+    <!-- Neon Glow Orbs -->
+    <div class="neon-orb orb-1"></div>
+    <div class="neon-orb orb-2"></div>
+    <div class="neon-orb orb-3"></div>
+
+    <!-- Mecha Frame Corners -->
+    <div class="mecha-frame top-left"></div>
+    <div class="mecha-frame top-right"></div>
+    <div class="mecha-frame bottom-left"></div>
+    <div class="mecha-frame bottom-right"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar glass-panel">
+        <div class="logo">
+            <span class="logo-bracket">[</span>
+            <span class="logo-text">JDVP</span>
+            <span class="logo-bracket">]</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about" data-text="ABOUT">About</a></li>
+            <li><a href="#hobbies" data-text="HOBBIES">Hobbies</a></li>
+            <li><a href="#projects" data-text="PROJECTS">Projects</a></li>
+            <li><a href="#contact" class="btn-cyber">Contact</a></li>
+        </ul>
+        <!-- Theme Toggle -->
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <span class="toggle-icon sun">☀️</span>
+            <span class="toggle-icon moon">🌙</span>
+            <span class="toggle-slider"></span>
+        </button>
+        <div class="nav-indicator"></div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-content">
+            <!-- Profile Image Section -->
+            <div class="profile-container">
+                <div class="profile-hexagon">
+                    <div class="hex-border"></div>
+                    <div class="profile-image">
+                        <!-- Replace 'profile.jpg' with your actual image -->
+                        <img src="profile.jpg" alt="Mark Gian Jacob" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                        <div class="profile-placeholder">
+                            <span class="placeholder-icon">👤</span>
+                            <span class="placeholder-text">MG</span>
+                        </div>
+                    </div>
+                    <div class="profile-glow"></div>
+                </div>
+                <!-- Mecha Tech Details -->
+                <div class="tech-lines">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+
+            <!-- Info Card -->
+            <div class="hero-card glass-panel">
+                <div class="card-header">
+                    <span class="status-dot"></span>
+                    <span class="status-text">SYSTEM ONLINE</span>
+                </div>
+                
+                <h1 class="glitch-text" data-text="MARK GIAN JACOB">
+                    <span class="name-line">MARK GIAN</span>
+                    <span class="name-highlight neon-text">JACOB</span>
+                </h1>
+                
+                <div class="title-bar">
+                    <span class="title-bracket">「</span>
+                    <p class="title-text">Frontend Developer & Creative Designer</p>
+                    <span class="title-bracket">」</span>
+                </div>
+
+                <div class="stats-container">
+                    <div class="stat-item">
+                        <span class="stat-label">PROJECTS</span>
+                        <span class="stat-value neon-text">3+</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-label">EXPERIENCE</span>
+                        <span class="stat-value neon-text">1 YR</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-label">STATUS</span>
+                        <span class="stat-value neon-text">ACTIVE</span>
+                    </div>
+                </div>
+
+                <div class="card-actions">
+                    <button class="btn-cyber primary">
+                        <span class="btn-text">VIEW PORTFOLIO</span>
+                        <span class="btn-icon">▶</span>
+                    </button>
+                    <button class="btn-cyber secondary">
+                        <span class="btn-text">DOWNLOAD CV</span>
+                        <span class="btn-icon">↓</span>
+                    </button>
+                </div>
+
+                <div class="card-footer">
+                    <div class="tech-tag">#WEBDEV</div>
+                    <div class="tech-tag">#UI/UX</div>
+                    <div class="tech-tag">#CREATIVE</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Floating Tech Elements -->
+        <div class="floating-elements">
+            <div class="float-item hex">⬡</div>
+            <div class="float-item circuit">◈</div>
+            <div class="float-item gear">⚙</div>
+        </div>
+    </header>
+
+    <!-- Scroll Indicator -->
+    <div class="scroll-indicator">
+        <span class="scroll-text">SCROLL DOWN</span>
+        <div class="scroll-arrow">▼</div>
+    </div>
+
+    <!-- ============================================
+         ABOUT SECTION
+         ============================================ -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <div class="header-line left"></div>
+                <h2 class="section-title">
+                    <span class="title-icon">◉</span>
+                    <span class="neon-text">ABOUT ME</span>
+                    <span class="title-sub">// PERSONAL_DATA</span>
+                </h2>
+                <div class="header-line right"></div>
+            </div>
+
+            <!-- About Content -->
+            <div class="about-content">
+                <!-- Left: Bio Card -->
+                <div class="about-bio glass-panel">
+                    <div class="bio-header">
+                        <span class="bio-icon">👤</span>
+                        <div class="bio-title">
+                            <h3>MARK GIAN <span class="neon-text">A. JACOB</span></h3>
+                            <p class="bio-tagline">Aspiring Web Developer</p>
+                        </div>
+                        <div class="age-badge">
+                            <span class="age-number">17</span>
+                            <span class="age-text">YRS OLD</span>
+                        </div>
+                    </div>
+
+                    <div class="bio-text">
+                        <p class="greeting">
+                            <span class="terminal-prompt">&gt;</span> 
+                            <span class="typing-text">Hello, World! Welcome to my digital space.</span>
+                        </p>
+                        <p>
+                            I'm an aspiring <span class="highlight">Web Developer</span> with a passion for creating 
+                            digital experiences. My dream is to bring my family to different countries through 
+                            <span class="highlight">hard work</span> and <span class="highlight">discipline</span>.
+                        </p>
+                        <p>
+                            I was inspired to pursue web development by my fellow acquaintances who are now 
+                            working in <span class="highlight">big IT corporations</span>. Their success motivated me to 
+                            follow the same path and build my future in the tech industry.
+                        </p>
+                    </div>
+
+                    <div class="bio-quote">
+                        <span class="quote-mark">“</span>
+                        <p>Code is poetry. Every line brings me closer to my dreams.</p>
+                        <span class="quote-mark">”</span>
+                    </div>
+                </div>
+
+                <!-- Right: Info Cards -->
+                <div class="about-info">
+                    <!-- Education Timeline -->
+                    <div class="info-card glass-panel">
+                        <div class="info-header">
+                            <span class="info-icon">🎓</span>
+                            <h4>EDUCATION_LOG</h4>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-label">ELEMENTARY</span>
+                                    <h5>Culiat Elementary School</h5>
+                                    <p>Foundation Years</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-label">JUNIOR HIGH</span>
+                                    <h5>Culiat High School</h5>
+                                    <p>Building Knowledge</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item active">
+                                <div class="timeline-dot"></div>
+                                <div class="timeline-content">
+                                    <span class="timeline-label">SENIOR HIGH</span>
+                                    <h5>SFHS</h5>
+                                    <p>Current • ICT Strand</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Goals Card -->
+                    <div class="info-card glass-panel">
+                        <div class="info-header">
+                            <span class="info-icon">🎯</span>
+                            <h4>MISSION_OBJECTIVES</h4>
+                        </div>
+                        <div class="goals-list">
+                            <div class="goal-item">
+                                <span class="goal-icon">▸</span>
+                                <span>Become a Professional Web Developer</span>
+                            </div>
+                            <div class="goal-item">
+                                <span class="goal-icon">▸</span>
+                                <span>Work in a Big Tech Company</span>
+                            </div>
+                            <div class="goal-item">
+                                <span class="goal-icon">▸</span>
+                                <span>Travel the World with Family</span>
+                            </div>
+                            <div class="goal-item">
+                                <span class="goal-icon">▸</span>
+                                <span>Inspire Others Through Code</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Values Card -->
+                    <div class="info-card glass-panel small">
+                        <div class="values-grid">
+                            <div class="value-item">
+                                <span class="value-icon">💪</span>
+                                <span>Hard Work</span>
+                            </div>
+                            <div class="value-item">
+                                <span class="value-icon">🎯</span>
+                                <span>Discipline</span>
+                            </div>
+                            <div class="value-item">
+                                <span class="value-icon">💡</span>
+                                <span>Creativity</span>
+                            </div>
+                            <div class="value-item">
+                                <span class="value-icon">❤️</span>
+                                <span>Family</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Section Footer -->
+            <div class="section-footer">
+                <div class="data-stream">
+                    <span>▸ USER_PROFILE_LOADED</span>
+                    <span>▸ DREAMS_INITIALIZED</span>
+                    <span>▸ FUTURE_LOADING...</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         HOBBIES SECTION
+         ============================================ -->
+    <section id="hobbies" class="hobbies-section">
+        <div class="section-container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <div class="header-line left"></div>
+                <h2 class="section-title">
+                    <span class="title-icon">◈</span>
+                    <span class="neon-text">HOBBIES</span>
+                    <span class="title-sub">// INTERESTS_MODULE</span>
+                </h2>
+                <div class="header-line right"></div>
+            </div>
+
+            <!-- Hobbies Grid -->
+            <div class="hobbies-grid">
+                
+                <!-- Hobby Card 1: Drums -->
+                <div class="hobby-card glass-panel">
+                    <div class="card-glow drums"></div>
+                    <div class="hobby-icon-container">
+                        <span class="hobby-icon">🥁</span>
+                        <div class="icon-ring"></div>
+                    </div>
+                    <div class="hobby-content">
+                        <h3 class="hobby-title">DRUMS</h3>
+                        <p class="hobby-subtitle">Rhythmic Core</p>
+                        <div class="experience-badge">
+                            <span class="exp-icon">⚡</span>
+                            <span class="exp-text">6+ YEARS</span>
+                        </div>
+                        <p class="hobby-description">
+                            Percussion specialist with over 6 years of experience. 
+                            Music is my escape and rhythm is my language.
+                        </p>
+                        <div class="hobby-stats">
+                            <div class="hobby-stat">
+                                <span class="stat-bar" style="--fill: 95%"></span>
+                                <span class="stat-name">PASSION</span>
+                            </div>
+                            <div class="hobby-stat">
+                                <span class="stat-bar" style="--fill: 88%"></span>
+                                <span class="stat-name">SKILL</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-corner top-left"></div>
+                    <div class="card-corner top-right"></div>
+                    <div class="card-corner bottom-left"></div>
+                    <div class="card-corner bottom-right"></div>
+                </div>
+
+                <!-- Hobby Card 2: Gaming -->
+                <div class="hobby-card glass-panel">
+                    <div class="card-glow gaming"></div>
+                    <div class="hobby-icon-container">
+                        <span class="hobby-icon">🎮</span>
+                        <div class="icon-ring"></div>
+                    </div>
+                    <div class="hobby-content">
+                        <h3 class="hobby-title">GAMING</h3>
+                        <p class="hobby-subtitle">Digital Tactician</p>
+                        <div class="game-tags">
+                            <span class="game-tag">Mobile Legends</span>
+                            <span class="game-tag">Wild Rift</span>
+                            <span class="game-tag">Roblox</span>
+                        </div>
+                        <p class="hobby-description">
+                            Strategic mobile gamer. Love competitive MOBAs 
+                            and creative sandbox experiences.
+                        </p>
+                        <div class="hobby-stats">
+                            <div class="hobby-stat">
+                                <span class="stat-bar" style="--fill: 90%"></span>
+                                <span class="stat-name">STRATEGY</span>
+                            </div>
+                            <div class="hobby-stat">
+                                <span class="stat-bar" style="--fill: 85%"></span>
+                                <span class="stat-name">TEAMWORK</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-corner top-left"></div>
+                    <div class="card-corner top-right"></div>
+                    <div class="card-corner bottom-left"></div>
+                    <div class="card-corner bottom-right"></div>
+                </div>
+
+                <!-- Hobby Card 3: Coding -->
+                <div class="hobby-card glass-panel">
+                    <div class="card-glow coding"></div>
+                    <div class="hobby-icon-container">
+                        <span class="hobby-icon">💻</span>
+                        <div class="icon-ring"></div>
+                    </div>
+                    <div class="hobby-content">
+                        <h3 class="hobby-title">CODING</h3>
+                        <p class="hobby-subtitle">Neural Architect</p>
+                        <div class="code-tags">
+                            <span class="code-tag">HTML</span>
+                            <span class="code-tag">CSS</span>
+                            <span class="code-tag">JavaScript</span>
+                            <span class="code-tag">Php</span>
+                            <span class="code-tag">MySQL</span>
+                            <span class="code-tag">Java</span>
+                        </div>
+                        <p class="hobby-description">
+                            Building digital experiences in my free time. 
+                            Turning ideas into interactive reality.
+                        </p>
+                        <div class="hobby-stats">
+                            <div class="hobby-stat">
+                                <span class="stat-bar" style="--fill: 80%"></span>
+                                <span class="stat-name">CREATIVITY</span>
+                            </div>
+                            <div class="hobby-stat">
+                                <span class="stat-bar" style="--fill: 75%"></span>
+                                <span class="stat-name">LEARNING</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card-corner top-left"></div>
+                    <div class="card-corner top-right"></div>
+                    <div class="card-corner bottom-left"></div>
+                    <div class="card-corner bottom-right"></div>
+                </div>
+
+            </div>
+
+            <!-- Section Footer -->
+            <div class="section-footer">
+                <div class="data-stream">
+                    <span>▸ LOADING_INTERESTS</span>
+                    <span>▸ PASSION_DETECTED</span>
+                    <span>▸ CREATIVITY_UNLOCKED</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         PROJECTS SECTION
+         ============================================ -->
+    <section id="projects" class="projects-section">
+        <div class="section-container">
+            <!-- Section Header -->
+            <div class="section-header">
+                <div class="header-line left"></div>
+                <h2 class="section-title">
+                    <span class="title-icon">⬡</span>
+                    <span class="neon-text">PROJECTS</span>
+                    <span class="title-sub">// PORTFOLIO_DATABASE</span>
+                </h2>
+                <div class="header-line right"></div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                
+                <!-- Project Card 1: Palengke Kios -->
+                <div class="project-card glass-panel">
+                    <div class="project-screen">
+                        <div class="screen-header">
+                            <span class="screen-dot red"></span>
+                            <span class="screen-dot yellow"></span>
+                            <span class="screen-dot green"></span>
+                            <span class="screen-title">palengke_kios.exe</span>
+                        </div>
+                        <div class="screen-content">
+                            <div class="project-visual kios">
+                                <span class="visual-icon">🏪</span>
+                                <div class="visual-grid">
+                                    <span>🥬</span><span>🍖</span><span>🐟</span>
+                                    <span>🧅</span><span>🍅</span><span>🥕</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-number">PROJECT_01</div>
+                        <h3 class="project-title">PALENGKE KIOS</h3>
+                        <p class="project-type">「 E-Commerce System 」</p>
+                        <p class="project-description">
+                            A digital marketplace simulation featuring local market goods. 
+                            Complete with inventory management and transaction system.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-item">HTML</span>
+                            <span class="tech-item">CSS</span>
+                            <span class="tech-item">JavaScript</span>
+                            <span class="tech-item">PHP</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" target="_blank" class="btn-cyber small">
+                                <span class="btn-text">VIEW PROJECT</span>
+                                <span class="btn-icon">→</span>
+                            </a>
+                            <a href="https://github.com/TsmHabib03/Palengke-Kiosk-JDVP" target="_blank" class="btn-cyber small secondary">
+                                <span class="btn-text">SOURCE</span>
+                                <span class="btn-icon">⟨/⟩</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-status online">
+                        <span class="status-indicator"></span>
+                        <span>DEPLOYED</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 2: Fruit Quiz -->
+                <div class="project-card glass-panel">
+                    <div class="project-screen">
+                        <div class="screen-header">
+                            <span class="screen-dot red"></span>
+                            <span class="screen-dot yellow"></span>
+                            <span class="screen-dot green"></span>
+                            <span class="screen-title">fruit_quiz.exe</span>
+                        </div>
+                        <div class="screen-content">
+                            <div class="project-visual quiz">
+                                <span class="visual-icon">🍎</span>
+                                <div class="quiz-options">
+                                    <span class="option">A) Apple</span>
+                                    <span class="option correct">B) Mango</span>
+                                    <span class="option">C) Orange</span>
+                                </div>
+                                <div class="score-display">SCORE: 100</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-number">PROJECT_02</div>
+                        <h3 class="project-title">FRUIT QUIZ</h3>
+                        <p class="project-type">「 Interactive Game 」</p>
+                        <p class="project-description">
+                            Test your knowledge about fruits! An engaging quiz game 
+                            with scoring system and multiple difficulty levels.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-item">HTML</span>
+                            <span class="tech-item">CSS</span>
+                            <span class="tech-item">JavaScript</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" target="_blank" class="btn-cyber small">
+                                <span class="btn-text">PLAY NOW</span>
+                                <span class="btn-icon">▶</span>
+                            </a>
+                            <a href="YOUR_FRUIT_QUIZ_GITHUB_URL" target="_blank" class="btn-cyber small secondary">
+                                <span class="btn-text">SOURCE</span>
+                                <span class="btn-icon">⟨/⟩</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-status online">
+                        <span class="status-indicator"></span>
+                        <span>LIVE</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 3: Search a Country -->
+                <div class="project-card glass-panel">
+                    <div class="project-screen">
+                        <div class="screen-header">
+                            <span class="screen-dot red"></span>
+                            <span class="screen-dot yellow"></span>
+                            <span class="screen-dot green"></span>
+                            <span class="screen-title">country_search.exe</span>
+                        </div>
+                        <div class="screen-content">
+                            <div class="project-visual search">
+                                <span class="visual-icon">🌍</span>
+                                <div class="search-box">
+                                    <span class="search-icon">🔍</span>
+                                    <span class="search-text">Philippines_</span>
+                                    <span class="cursor-blink">|</span>
+                                </div>
+                                <div class="country-result">
+                                    <span>🇵🇭</span>
+                                    <span>Population: 115M</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-number">PROJECT_03</div>
+                        <h3 class="project-title">SEARCH A COUNTRY</h3>
+                        <p class="project-type">「 Data Explorer 」</p>
+                        <p class="project-description">
+                            Explore countries worldwide! Search and discover information 
+                            about any nation including population, capital, and more.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-item">HTML</span>
+                            <span class="tech-item">CSS</span>
+                            <span class="tech-item">JavaScript</span>
+                            <span class="tech-item">REST API</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="#" target="_blank" class="btn-cyber small">
+                                <span class="btn-text">EXPLORE</span>
+                                <span class="btn-icon">🌐</span>
+                            </a>
+                            <a href="YOUR_COUNTRY_SEARCH_GITHUB_URL" target="_blank" class="btn-cyber small secondary">
+                                <span class="btn-text">SOURCE</span>
+                                <span class="btn-icon">⟨/⟩</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-status online">
+                        <span class="status-indicator"></span>
+                        <span>ACTIVE</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Section Footer -->
+            <div class="section-footer">
+                <div class="data-stream">
+                    <span>▸ PROJECTS_LOADED: 3</span>
+                    <span>▸ STATUS: ALL_SYSTEMS_GO</span>
+                    <span>▸ MORE_COMING_SOON</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Theme Toggle Script -->
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const body = document.body;
+        
+        // Check for saved theme preference or default to dark
+        const savedTheme = localStorage.getItem('theme') || 'dark';
+        body.setAttribute('data-theme', savedTheme);
+        
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = body.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            body.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+    </script>
+
+</body>
+</html>
